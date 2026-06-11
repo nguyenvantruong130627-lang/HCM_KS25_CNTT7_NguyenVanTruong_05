@@ -193,14 +193,14 @@ def statistics(manager_task_list):
         if item.get('status') == "Bình thường":
             count_complete += 1
         if item.get('status') == "Cần tăng tốc":
-            count_complete_early += 1
+            count_complete_late += 1
         if item.get('status') == "Quá hạn":
-            count_complete_very_early += 1
+            count_complete_very_late += 1
 
     print(f"Trạng thái nộp sớm {count_complete_early}")
     print(f"Trạng thái nộp bình thường {count_complete}")
-    print(f"Trạng thái cần tăng tốc {count_complete_early}")
-    print(f"Trạng thái nộp trễ {count_complete_very_early}")
+    print(f"Trạng thái cần tăng tốc {count_complete_late}")
+    print(f"Trạng thái nộp trễ {count_complete_very_late}")
         
 
 
